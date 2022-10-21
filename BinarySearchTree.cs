@@ -41,7 +41,7 @@ namespace Day15BinarySearchTree
                     this.RightTree.Insert(item);
             }
         }
-
+        //method to display
         public void Display()
         {
             if (this.LeftTree != null)
@@ -56,5 +56,12 @@ namespace Day15BinarySearchTree
                 this.RightTree.Display();
             }
         }
+        //method for getting size of tree
+        public void GetSize()
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
+        }
+
+
     }
 }
